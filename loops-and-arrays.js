@@ -12,9 +12,11 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
-
-
-
+console.log(names)
+for (i = 0 ; i <names.length; i++)
+    names[i] = names[i] + "je";
+console.log(names)
+console.log()
 // ==========================================
 // Opdracht 2
 // Schrijf een script dat ieder EVEN getal in onderstaande array met 2 vermenigvuldigd, en ieder ONEVEN getal met 3
@@ -22,7 +24,17 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // ==========================================
 
 const numbers = [2, 4, 5, 29, 38];
+console.log(numbers)
+for (j = 0 ; j < numbers.length ; j++){
+    if (numbers[j] % 2 == 0){
+       numbers[j] = numbers[j] * 2
+    } else {
+        numbers[j] = numbers[j] * 3
+    }
 
+}
+console.log(numbers)
+console.log()
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
@@ -41,6 +53,12 @@ const numbers = [2, 4, 5, 29, 38];
 // ==========================================
 
 const squares = [30, 2, 8, 24, 11];
+console.log()
+console.log(squares)
+for (v = 0; v < squares.length; v++){
+    result = squares[v] * squares[v] * squares[v];
+    console.log("Het volume van ", squares[v] , "is" , result);
+}
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
