@@ -20,9 +20,9 @@ for (let i = 0 ; i < 3; i++) {
  // ==========================================
 for (let i = 0; i <5 ; i++){
     if (i < 4){
-        console.log("loop...")
+        console.log("loop...");
     }else {
-        console.log("Klaar!")
+        console.log("Klaar!");
     }
 }
 
@@ -36,11 +36,11 @@ for (let i = 0; i <5 ; i++){
 // 3 is oneven
 // .... etc.
 // 15 is oneven
-for (i = 0; i<16 ; i++ ){
-    if (i % 2 == 0){
-        console.log(i, "is even")
+for (i = 0; i<15 ; i++ ){
+    if (i % 2 === 0){
+        console.log(i, "is even");
     } else {
-        console.log(i, "is oneven")
+        console.log(i, "is oneven");
     }
 }
 
@@ -70,13 +70,17 @@ for (i = 0; i<16 ; i++ ){
 for (i=0;i<10; i++){
     if (i < 3)
         console.log(i);
-    else if (i < 6){
-        console.log(">",i)
+    else if (i <= 5){
+        console.log(">",i);
     }
-    else if (i < 10){
-        console.log(">>", i)
+    else if (i <= 9){
+        console.log(">>", i);
     }
 
+    // Ook mogelijk
+    // for (let j = 0; j < 10; j++) {
+    //     j < 3 ? console.log(j) : j < 6 ? console.log('<' , j) : console.log('<<', j)
+    // }
 
 
 
